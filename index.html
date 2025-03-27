@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purvi Pinki Games - By Sunny</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <h1>Purvi Pinki Games</h1>
+            <h2>By Sunny</h2>
+        </div>
+        <div class="settings">
+            <button id="sound-toggle" class="settings-btn" aria-label="Toggle Sound">
+                <img src="assets/sound-on.png" alt="Sound On" id="sound-icon">
+            </button>
+            <button id="help-btn" class="settings-btn" aria-label="Help">
+                <img src="assets/help.png" alt="Help">
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section id="game-menu" class="active-section">
+            <h2>Choose a Game to Play!</h2>
+            <div class="games-grid">
+                <div class="game-tile" data-game="pingpong">
+                    <img src="assets/pingpong-icon.png" alt="Ping Pong Game">
+                    <h3>Ping Pong</h3>
+                </div>
+                <div class="game-tile" data-game="tictactoe">
+                    <img src="assets/tictactoe-icon.png" alt="Tic Tac Toe Game">
+                    <h3>Tic Tac Toe</h3>
+                </div>
+                <div class="game-tile" data-game="dice">
+                    <img src="assets/dice-icon.png" alt="Dice Game">
+                    <h3>Dice Game</h3>
+                </div>
+                <div class="game-tile" data-game="racing">
+                    <img src="assets/racing-icon.png" alt="Racing Game">
+                    <h3>Racing</h3>
+                </div>
+                <div class="game-tile" data-game="ludo">
+                    <img src="assets/ludo-icon.png" alt="Ludo Game">
+                    <h3>Ludo</h3>
+                </div>
+                <div class="game-tile" data-game="tetris">
+                    <img src="assets/tetris-icon.png" alt="Tetris Game">
+                    <h3>Tetris</h3>
+                </div>
+                <div class="game-tile" data-game="drawing">
+                    <img src="assets/drawing-icon.png" alt="Drawing Game">
+                    <h3>Drawing</h3>
+                </div>
+                <div class="game-tile" data-game="snakeladder">
+                    <img src="assets/snakeladder-icon.png" alt="Snake and Ladder Game">
+                    <h3>Snake & Ladder</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- Game sections will be loaded dynamically -->
+        <section id="game-container" class="hidden-section">
+            <div class="game-header">
+                <button id="back-btn" class="nav-btn">
+                    <img src="assets/back.png" alt="Back to Menu">
+                    Back to Menu
+                </button>
+                <h2 id="game-title">Game Title</h2>
+                <button id="instructions-btn" class="nav-btn">
+                    <img src="assets/instructions.png" alt="Instructions">
+                    Instructions
+                </button>
+            </div>
+            <div id="game-content">
+                <!-- Game content will be loaded here -->
+            </div>
+        </section>
+
+        <!-- Instructions modal -->
+        <div id="instructions-modal" class="modal hidden">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <h2>How to Play: <span id="modal-game-title">Game</span></h2>
+                <div id="instructions-content">
+                    <!-- Instructions content will be loaded here -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Help modal -->
+        <div id="help-modal" class="modal hidden">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <h2>Welcome to Purvi Pinki Games!</h2>
+                <div>
+                    <p>This is a fun collection of games for kids of all ages. Here's how to get started:</p>
+                    <ul>
+                        <li>Click on any game tile from the main menu to start playing</li>
+                        <li>Use the "Instructions" button in each game to learn how to play</li>
+                        <li>Click the sound button in the top right to turn sounds on or off</li>
+                        <li>Click "Back to Menu" anytime to return to the main menu</li>
+                    </ul>
+                    <p>Have fun playing!</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Purvi Pinki Games by Sunny. All rights reserved.</p>
+    </footer>
+
+    <!-- Core scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/audio.js"></script>
+    
+    <!-- Game scripts will be loaded dynamically -->
+
+</body>
+</html>

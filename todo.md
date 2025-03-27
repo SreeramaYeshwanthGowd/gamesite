@@ -1,0 +1,25 @@
+# Purvi Pinki Games Website Tasks
+
+- [x] Clone the repository
+- [x] Read instructions.txt
+- [ ] Create project structure
+- [ ] Implement website framework
+  - [ ] Create HTML structure
+  - [ ] Implement CSS styling
+  - [ ] Set up JavaScript framework
+- [ ] Implement games
+  - [ ] PingPong game
+  - [ ] TicTacToe game
+  - [ ] Dice game
+  - [ ] Racing game
+  - [ ] Ludo game
+  - [ ] Tetris game
+  - [ ] Drawing game
+  - [ ] SnakeAndLadder game
+- [ ] Add general website features
+  - [ ] Navigation
+  - [ ] Help/Instructions sections
+  - [ ] Sound controls
+  - [ ] Responsive design
+- [ ] Test all games and features
+- [ ] Package everything into a zip file
